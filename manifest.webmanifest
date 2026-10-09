@@ -1,0 +1,14 @@
+{
+ "name": "安安的數字城堡與守護怪獸大冒險",
+ "short_name": "安安數字城堡",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#EAF0FF",
+ "theme_color": "#3D5AFE",
+ "icons": [
+  { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+  { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+ ]
+}
