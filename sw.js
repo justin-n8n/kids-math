@@ -1,5 +1,5 @@
-/* 離線快取：版本 202610091126 */
-const CACHE='am-202610091126';
+/* 離線快取：版本 202610091233 */
+const CACHE='am-202610091233';
 const ASSETS=["./", "index.html", "data.js", "manifest.webmanifest", "icon-192.png", "icon-512.png", "style.css", "app.js", "monsters.js", "config.js"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('am-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
